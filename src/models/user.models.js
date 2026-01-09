@@ -52,8 +52,8 @@ const userSchema = new Schema(
 )
  
 userSchema.pre('save', async function (next) {
-    
-    if (!this.modified("password")) return next ()
+    // fixed in registration video
+    if (!this.isModified("password")) return next ()
 
     this.password = bcrypt.hash(this.password, 10)
 
