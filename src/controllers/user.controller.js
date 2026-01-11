@@ -463,5 +463,7 @@ export {
     getCurrentUser,
     updateAccountDetails,
     updateUserAvatar,
-    uploadOnCloudinary
+    UpdateUserCoverImage,
+    getUserChannelProfile,
+    getWatchHistory
  }
